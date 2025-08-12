@@ -6,44 +6,94 @@
     <title>Vertex Construtora</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0; padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f4f6f8;
             color: #333;
         }
         header {
             background-color: #007acc;
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
         }
         nav {
             background-color: #005f99;
-            padding: 10px;
+            padding: 15px 0;
             text-align: center;
         }
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 1.1em;
         }
         nav a:hover {
             text-decoration: underline;
         }
         section {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 30px auto;
             background: white;
-            padding: 20px;
-            border-radius: 5px;
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            color: #007acc;
+            margin-top: 0;
         }
         footer {
-            text-align: center;
-            padding: 15px;
             background-color: #007acc;
             color: white;
-            margin-top: 30px;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        .contact-links a {
+            display: inline-block;
+            margin-right: 20px;
+            text-decoration: none;
+            color: #007acc;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        .contact-links a:hover {
+            color: #004a75;
+        }
+        /* Ícones simples */
+        .contact-links a::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .contact-links a.instagram::before {
+            background-image: url('https://cdn-icons-png.flaticon.com/512/87/87390.png');
+        }
+        .contact-links a.whatsapp::before {
+            background-image: url('https://cdn-icons-png.flaticon.com/512/733/733585.png');
+        }
+        /* Responsividade simples */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            section {
+                margin: 20px 10px;
+                padding: 20px 15px;
+            }
+            .contact-links a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -77,7 +127,11 @@
 <section id="contato">
     <h2>Contato</h2>
     <p>Email: contato@vertexconstrutora.com.br</p>
-    <p>Telefone: (41) 99999-9999</p>
+    <p>Telefone: (41) 998545885</p>
+    <div class="contact-links">
+        <a href="https://www.instagram.com/vertexconstrutora" target="_blank" rel="noopener" class="instagram">Instagram</a>
+        <a href="https://wa.me/5598545885" target="_blank" rel="noopener" class="whatsapp">WhatsApp</a>
+    </div>
 </section>
 
 <footer>
@@ -86,3 +140,4 @@
 
 </body>
 </html>
+
